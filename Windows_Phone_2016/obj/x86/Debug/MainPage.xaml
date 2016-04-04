@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="Windows_Phone_2016.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Windows_Phone_2016"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--The main stackpanel for the page-->
+    <StackPanel Background="SkyBlue" >
+        <!--Inner Stackpanel to hold the controls for outputting weather related data-->
+        <StackPanel VerticalAlignment="Center">
+            <!--Controls used for outputting data received from weather API-->
+            <!--Control for outputting image associated with the weather from Assets/WeatherImages-->
+            <Image x:ConnectionId='1' Name="ResultImage" Height="250" Width="250" HorizontalAlignment="Center"/>
+            <!--Outputs the temperature-->
+            <TextBlock x:ConnectionId='2' Name="TemperatureTextBlock" FontSize="60" HorizontalAlignment="Center"/>
+            <!--Outputs the weather Description-->
+            <TextBlock x:ConnectionId='3' Name="DescriptionTextBlock" FontSize="40" HorizontalAlignment="Center"/>
+            <!--Outputs windspeed-->
+            <TextBlock x:ConnectionId='4' Name="WindSpeedTextBlock" FontSize="34" HorizontalAlignment="Center"/>
+            <!--Outputs Location-->
+            <TextBlock x:ConnectionId='5' Name="LocationTextBlock" FontSize="34" HorizontalAlignment="Center"/>
+        <!--End of inner Stackpanel-->    
+        </StackPanel>
+        <!--End of main Stackpanel-->
+    </StackPanel>
+</Page>
+
